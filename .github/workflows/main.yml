@@ -9,7 +9,7 @@ on:
       - main
  
 env:
-  CSV_URL: "MLproject/used_car_price_dataset_cleaned_scaled.csv"
+  CSV_URL: "MLProject/used_car_price_dataset_cleaned_scaled.csv"
  
 jobs:
   build:
