@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  CSV_URL: "MLProject/used_car_price_dataset_cleaned_scaled.csv"
+  CSV_URL: "Workflow-CI/MLProject/used_car_price_dataset_cleaned_scaled.csv"
 
 jobs:
   build:
@@ -39,4 +39,4 @@ jobs:
       # Run as a mlflow project
       - name: Run mlflow project
         run: |
-          mlflow run ./MLProject --env-manager=local
+          mlflow run ./Workflow-CI/MLProject --no-conda
