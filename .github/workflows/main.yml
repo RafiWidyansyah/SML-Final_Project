@@ -45,5 +45,6 @@ jobs:
 
       # Run as a mlflow project
       - name: Run mlflow project
+        shell: bash -1 {0}
         run: |
           mlflow run ./Workflow-CI/MLProject
