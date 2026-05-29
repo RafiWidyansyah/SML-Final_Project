@@ -46,4 +46,4 @@ jobs:
       # Run as a mlflow project
       - name: Run mlflow project
         run: |
-          mlflow run ./Workflow-CI/MLProject
+          mlflow run ./Workflow-CI/MLProject --env-manager=local
