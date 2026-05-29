@@ -13,7 +13,7 @@ env:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE
@@ -46,4 +46,5 @@ jobs:
       # Run as a mlflow project
       - name: Run mlflow project
         run: |
-          mlflow run ./Workflow-CI/MLProject --env-manager=local
+          cd MLProject
+          mlflow run . --env-manager=local
